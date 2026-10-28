@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Bulk Color Converter</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Bulk Color Converter
+            </h1>
+        </header>
+        
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <p>
+                    Hex Input
+                </p>
+                <textarea 
+                rows="20"
+                id="input"
+                placeholder="#000000&#10;#141414&#10;#dbcdb3&#10;..."></textarea>
+            </div>
+
+            <button id="convert">Convert</button>
+
+            <div>
+                <p>Decimal Output</p>
+                <textarea
+                rows="20"
+                id="output"
+                placeholder="0 0 0&#10;20 20 20&#10;219 205 179&#10;..."></textarea>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
