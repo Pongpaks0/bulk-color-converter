@@ -4,7 +4,7 @@ const button_ele = document.querySelector("#convert");
 const regex = /^[0-9a-f]{6}$/i;
 
 button_ele.addEventListener("click", () => {
-    const input_values = input_ele.value.split("\n");
+    const input_values = input_ele.value.split(/\r?\n/);
     const converted = toDecimal(input_values);
     output_ele.value = converted;
 });
